@@ -13,7 +13,7 @@
   }
 
   &__logo {
-    flex: 0 1 25%;
+    flex: 0 1 32%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,5 +27,33 @@
     @include sm-breakpoint {
       display: none;
     }
+  }
+}
+
+.categories {
+  padding: torem(18) 0 torem(20);
+  background: $white;
+  border-radius: 0 0 $borderSecondary $borderSecondary;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: torem(18);
+    padding: 0 torem(15);
+  }
+
+  &__item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: torem(102);
+    height: torem(70);
+    padding: torem(12);
+    background: $black;
+    border-radius: $borderMain;
+    font-size: torem(20);
+    color: $white;
+    text-align: center;
   }
 }
