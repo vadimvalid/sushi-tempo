@@ -153,5 +153,52 @@
         }
       }
     }
+
+    &__count {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: torem(8);
+      margin-top: auto;
+      padding: torem(10) torem(24) torem(9);
+      background: $white;
+      border-radius: $borderMain;
+      font-size: torem(24);
+      color: $black;
+      transition: all 0.3s ease;
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: torem(26);
+        height: torem(26);
+        background: $black;
+        border-radius: 50%;
+        color: $white;
+
+        &:first-child {
+          p {
+            height: torem(18);
+          }
+        }
+
+        &:last-of-type {
+          p {
+            height: torem(28);
+          }
+        }
+      }
+    }
+
+    &.active {
+      .btn {
+        display: none;
+      }
+
+      .section__item__count {
+        display: flex;
+      }
+    }
   }
 }
