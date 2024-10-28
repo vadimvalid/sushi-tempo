@@ -59,6 +59,11 @@ ul li {
   border-radius: 20px;
   font-size: 1rem;
   color: #000;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #f00;
+  color: #fff;
 }
 
 .container {
@@ -299,6 +304,7 @@ ul li {
 }
 
 .section {
+  width: 100%;
   padding-top: 1.75rem;
 }
 .section h2 {
@@ -363,8 +369,15 @@ ul li {
   font-size: 1rem;
   color: #000;
 }
+.section__item .btn {
+  margin-top: auto;
+}
 .section__item--big .section__item__info__price {
   padding: 0.5rem 1.375rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

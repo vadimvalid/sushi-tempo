@@ -60,6 +60,7 @@
 }
 
 .section {
+  width: 100%;
   padding-top: torem(28);
 
   h2 {
@@ -130,6 +131,10 @@
         font-size: torem(16);
         color: $black;
       }
+    }
+
+    .btn {
+      margin-top: auto;
     }
 
     &--big {
