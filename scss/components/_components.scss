@@ -31,3 +31,14 @@ ul {
     list-style: none;
   }
 }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: torem(16) torem(24) torem(15);
+  background: $white;
+  border-radius: $borderMain;
+  font-size: torem(16);
+  color: $black;
+}
