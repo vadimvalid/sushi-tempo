@@ -12,6 +12,7 @@ button {
   padding: 0;
   background: none;
   border: 0;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -20,4 +21,13 @@ select {
   background: none;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
 }
