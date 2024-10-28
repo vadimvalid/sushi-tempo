@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sushi tempo</title>
   </head>
@@ -34,21 +35,35 @@
           </select>
         </div>
         <button type="button" class="header__profile header__item">
-          <img
-            src="./images/icons/icon-user.svg"
-            alt="user icon"
+          <svg
             width="20"
             height="20"
-          />
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m14.783 17.428.37-.239-.19-.397a5.501 5.501 0 0 0-9.925 0l-.19.397.37.239A8.794 8.794 0 0 0 10 18.833a8.794 8.794 0 0 0 4.783-1.405zm.618-1.24.318.576.47-.461a8.833 8.833 0 1 0-12.377 0l.469.461.318-.576A6.164 6.164 0 0 1 10 13a6.164 6.164 0 0 1 5.4 3.188zM19.5 10a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0zm-9.5.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm3.667-3a3.667 3.667 0 1 1-7.334 0 3.667 3.667 0 0 1 7.334 0z"
+              fill="#000"
+              stroke="#000"
+            />
+          </svg>
           <p>Кабинет</p>
         </button>
         <button type="button" class="header__cart header__item">
-          <img
-            src="./images/icons/icon-cart.svg"
-            alt="cart icon"
-            width="20"
+          <svg
+            width="19"
             height="20"
-          />
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.116 3.389H18L16.111 10H5.134m11.922 3.778H5.722L3.833 1.5H1m5.667 16.056a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0zm10.389 0a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0z"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
           <p>Корзина</p>
         </button>
       </div>
@@ -96,7 +111,14 @@
           </div>
         </div>
       </section>
-      <section id="categories" class="categories">
+      <section
+        id="categories"
+        class="categories"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div class="container">
           <ul class="categories__list">
             <li class="categories__item"><a href="#rolls">Rolls</a></li>
@@ -121,9 +143,22 @@
       </section>
       <section id="rolls" class="section">
         <div class="container">
-          <h2>ROLLS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            ROLLS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="250"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/1.webp" type="image/webp" />
                 <img
@@ -144,8 +179,19 @@
                 </div>
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
+              <div class="section__item__count">
+                <button class="section__item__count__btn"><p>-</p></button>
+                <p>1</p>
+                <button class="section__item__count__btn"><p>+</p></button>
+              </div>
             </div>
-            <div class="section__item section__item--big">
+            <div
+              class="section__item section__item--big"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/2.webp" type="image/webp" />
                 <img
@@ -170,7 +216,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/3.webp" type="image/webp" />
                 <img
@@ -192,7 +244,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/4.webp" type="image/webp" />
                 <img
@@ -214,7 +272,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/5.webp" type="image/webp" />
                 <img
@@ -236,7 +300,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/6.webp" type="image/webp" />
                 <img
@@ -258,7 +328,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/7.webp" type="image/webp" />
                 <img
@@ -280,7 +356,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/8.webp" type="image/webp" />
                 <img
@@ -302,7 +384,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/9.webp" type="image/webp" />
                 <img
@@ -324,7 +412,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/10.webp" type="image/webp" />
                 <img
@@ -346,7 +440,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/11.webp" type="image/webp" />
                 <img
@@ -368,7 +468,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/12.webp" type="image/webp" />
                 <img
@@ -390,7 +496,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/13.webp" type="image/webp" />
                 <img
@@ -412,7 +524,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/14.webp" type="image/webp" />
                 <img
@@ -434,7 +552,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/15.webp" type="image/webp" />
                 <img
@@ -456,7 +580,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/16.webp" type="image/webp" />
                 <img
@@ -478,7 +608,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/17.webp" type="image/webp" />
                 <img
@@ -500,7 +636,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/18.webp" type="image/webp" />
                 <img
@@ -527,9 +669,22 @@
       </section>
       <section id="baked-rolls" class="section">
         <div class="container">
-          <h2>BAKED ROLLS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            BAKED ROLLS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/19.webp" type="image/webp" />
                 <img
@@ -551,7 +706,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/20.webp" type="image/webp" />
                 <img
@@ -573,7 +734,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/21.webp" type="image/webp" />
                 <img
@@ -595,7 +762,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/22.webp" type="image/webp" />
                 <img
@@ -622,9 +795,22 @@
       </section>
       <section id="tempo-rolls" class="section">
         <div class="container">
-          <h2>TEMPO ROLLS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            TEMPO ROLLS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/23.webp" type="image/webp" />
                 <img
@@ -646,7 +832,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/24.webp" type="image/webp" />
                 <img
@@ -668,7 +860,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/25.webp" type="image/webp" />
                 <img
@@ -690,7 +888,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/26.webp" type="image/webp" />
                 <img
@@ -712,7 +916,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/27.webp" type="image/webp" />
                 <img
@@ -734,7 +944,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/28.webp" type="image/webp" />
                 <img
@@ -756,7 +972,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/29.webp" type="image/webp" />
                 <img
@@ -778,7 +1000,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/30.webp" type="image/webp" />
                 <img
@@ -805,9 +1033,22 @@
       </section>
       <section id="vegan" class="section">
         <div class="container">
-          <h2>VEGAN ROLLS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            VEGAN ROLLS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/31.webp" type="image/webp" />
                 <img
@@ -829,7 +1070,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/32.webp" type="image/webp" />
                 <img
@@ -851,7 +1098,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/33.webp" type="image/webp" />
                 <img
@@ -873,7 +1126,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/34.webp" type="image/webp" />
                 <img
@@ -895,7 +1154,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/35.webp" type="image/webp" />
                 <img
@@ -922,9 +1187,22 @@
       </section>
       <section id="noodles" class="section">
         <div class="container">
-          <h2>NOODELS AND RICE</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            NOODELS AND RICE
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/36.webp" type="image/webp" />
                 <img
@@ -946,7 +1224,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/37.webp" type="image/webp" />
                 <img
@@ -968,7 +1252,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/38.webp" type="image/webp" />
                 <img
@@ -990,7 +1280,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/39.webp" type="image/webp" />
                 <img
@@ -1012,7 +1308,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/40.webp" type="image/webp" />
                 <img
@@ -1034,7 +1336,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/41.webp" type="image/webp" />
                 <img
@@ -1056,7 +1364,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/42.webp" type="image/webp" />
                 <img
@@ -1078,7 +1392,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/43.webp" type="image/webp" />
                 <img
@@ -1105,9 +1425,22 @@
       </section>
       <section id="lunch" class="section">
         <div class="container">
-          <h2>LUNCH</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            LUNCH
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/47.webp" type="image/webp" />
                 <img
@@ -1129,7 +1462,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/47.webp" type="image/webp" />
                 <img
@@ -1156,9 +1495,22 @@
       </section>
       <section id="soup" class="section">
         <div class="container">
-          <h2>SOUP</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            SOUP
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/44.webp" type="image/webp" />
                 <img
@@ -1180,7 +1532,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/45.webp" type="image/webp" />
                 <img
@@ -1207,9 +1565,22 @@
       </section>
       <section id="sets" class="section">
         <div class="container">
-          <h2>SETS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            SETS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/49.webp" type="image/webp" />
                 <img
@@ -1231,7 +1602,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/50.webp" type="image/webp" />
                 <img
@@ -1253,7 +1630,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/51.webp" type="image/webp" />
                 <img
@@ -1275,7 +1658,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/52.webp" type="image/webp" />
                 <img
@@ -1297,7 +1686,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/52.webp" type="image/webp" />
                 <img
@@ -1324,9 +1719,22 @@
       </section>
       <section id="starter" class="section">
         <div class="container">
-          <h2>STARTER</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            STARTER
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/53.webp" type="image/webp" />
                 <img
@@ -1348,7 +1756,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/54.webp" type="image/webp" />
                 <img
@@ -1370,7 +1784,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/55.webp" type="image/webp" />
                 <img
@@ -1392,7 +1812,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/56.webp" type="image/webp" />
                 <img
@@ -1414,7 +1840,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/57.webp" type="image/webp" />
                 <img
@@ -1436,7 +1868,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/58.webp" type="image/webp" />
                 <img
@@ -1458,7 +1896,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/59.webp" type="image/webp" />
                 <img
@@ -1480,7 +1924,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/60.webp" type="image/webp" />
                 <img
@@ -1507,9 +1957,22 @@
       </section>
       <section id="rolls" class="section">
         <div class="container">
-          <h2>DRINKS</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            DRINKS
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/61.webp" type="image/webp" />
                 <img
@@ -1531,7 +1994,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/62.webp" type="image/webp" />
                 <img
@@ -1553,7 +2022,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/63.webp" type="image/webp" />
                 <img
@@ -1575,7 +2050,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/64.webp" type="image/webp" />
                 <img
@@ -1597,7 +2078,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/65.webp" type="image/webp" />
                 <img
@@ -1619,7 +2106,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/66.webp" type="image/webp" />
                 <img
@@ -1641,7 +2134,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/67.webp" type="image/webp" />
                 <img
@@ -1663,7 +2162,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/68.webp" type="image/webp" />
                 <img
@@ -1685,7 +2190,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/69.webp" type="image/webp" />
                 <img
@@ -1707,7 +2218,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/70.webp" type="image/webp" />
                 <img
@@ -1729,7 +2246,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/71.webp" type="image/webp" />
                 <img
@@ -1755,10 +2278,24 @@
         </div>
       </section>
       <section id="sauce" class="section">
+        >
         <div class="container">
-          <h2>SAUCE</h2>
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            SAUCE
+          </h2>
           <div class="section__items">
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/72.webp" type="image/webp" />
                 <img
@@ -1780,7 +2317,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/73.webp" type="image/webp" />
                 <img
@@ -1802,7 +2345,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/74.webp" type="image/webp" />
                 <img
@@ -1824,7 +2373,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/75.webp" type="image/webp" />
                 <img
@@ -1846,7 +2401,13 @@
               </div>
               <button class="btn">ДОБАВИТЬ В КОРЗИНУ</button>
             </div>
-            <div class="section__item">
+            <div
+              class="section__item"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <picture class="section__item__img">
                 <source srcset="./images/76.webp" type="image/webp" />
                 <img
@@ -1904,8 +2465,51 @@
         </div>
       </div>
     </footer>
-
+    <a href="#header" class="up"
+      ><img src="./images/icons/icon-top.svg" alt="up icon"
+    /></a>
+    <button type="button" class="cart-fixed">
+      <svg
+        width="19"
+        height="20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.116 3.389H18L16.111 10H5.134m11.922 3.778H5.722L3.833 1.5H1m5.667 16.056a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0zm10.389 0a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0z"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <p>Корзина</p>
+    </button>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>

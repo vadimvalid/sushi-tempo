@@ -54,7 +54,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem 0.9375rem;
+  padding: 0.9375rem 1.5rem 0.875rem;
   background: #fff;
   border-radius: 20px;
   font-size: 1rem;
@@ -64,6 +64,33 @@ ul li {
 .btn:hover {
   background: #f00;
   color: #fff;
+}
+
+.up {
+  position: fixed;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  display: none;
+  z-index: 1000;
+}
+.up.sticky {
+  display: block;
+}
+
+.cart-fixed {
+  position: fixed;
+  right: 7.1875rem;
+  bottom: 3.125rem;
+  display: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  color: #fff;
+  z-index: 1000;
+}
+.cart-fixed.sticky {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
 }
 
 .container {
@@ -88,9 +115,16 @@ ul li {
   align-items: center;
   gap: 0.3125rem;
   font-size: 1.25rem;
+  transition: all 0.3s ease;
 }
 .header__item:last-child {
   margin-right: 2.5rem;
+}
+.header__item:hover {
+  color: #f00;
+}
+.header__item:hover svg path {
+  stroke: #f00;
 }
 .header__logo {
   display: flex;
@@ -290,6 +324,8 @@ ul li {
 }
 .categories__item {
   flex: 1;
+}
+.categories__item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,6 +337,10 @@ ul li {
   font-size: 1.25rem;
   color: #fff;
   text-align: center;
+  transition: all 0.3s ease;
+}
+.categories__item a:hover, .categories__item a.active {
+  background: #f00;
 }
 
 .section {
@@ -374,6 +414,41 @@ ul li {
 }
 .section__item--big .section__item__info__price {
   padding: 0.5rem 1.375rem;
+}
+.section__item__count {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.625rem 1.5rem 0.5625rem;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.section__item__count__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+.section__item__count__btn:first-child p {
+  height: 1.125rem;
+}
+.section__item__count__btn:last-of-type p {
+  height: 1.75rem;
+}
+.section__item.active .btn {
+  display: none;
+}
+.section__item.active .section__item__count {
+  display: flex;
 }
 
 html {
