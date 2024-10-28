@@ -6,7 +6,12 @@
 @use "settings" as *;
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: $black;
   font-family: "Helios", sans-serif;
-  line-height: normal;
+  line-height: 1;
+  color: $black;
+  text-transform: uppercase;
 }

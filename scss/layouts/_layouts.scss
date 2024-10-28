@@ -30,7 +30,6 @@ section {
     align-items: center;
     gap: torem(5);
     font-size: torem(20);
-    text-transform: uppercase;
 
     &:last-child {
       margin-right: torem(40);
@@ -92,6 +91,122 @@ section {
 
     &__logo {
       flex: 0 1 100%;
+    }
+  }
+}
+
+.footer {
+  padding: torem(20) 0 torem(30);
+  border-radius: $borderMain $borderMain 0 0;
+  background: $white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: torem(20);
+    padding: 0 torem(30);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: torem(5);
+    font-size: torem(24);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: torem(12);
+    font-size: torem(32);
+
+    &__address {
+      display: flex;
+      flex-wrap: wrap;
+      gap: torem(20);
+      margin-top: torem(5);
+      font-family: "Inter Black", sans-serif;
+
+      font-size: torem(13);
+
+      p {
+        &:not(:last-child) {
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            width: 3px;
+            height: 100%;
+            background: $black;
+            transform: translate(50%, -50%);
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: torem(10);
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: torem(5);
+      font-size: torem(24);
+    }
+  }
+
+  @include sm-breakpoint {
+    padding: torem(20) 0 torem(30);
+
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: torem(30);
+      padding: 0 torem(15);
+    }
+
+    &__links {
+      flex-direction: row;
+      gap: torem(20);
+      font-size: torem(16);
+    }
+
+    &__info {
+      order: -1;
+      gap: torem(10);
+      font-size: torem(24);
+
+      &__address {
+        flex-direction: column;
+        gap: torem(10);
+        margin-top: 0;
+
+        p {
+          &:not(:last-child) {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__social {
+      flex-direction: row;
+      gap: torem(15);
+
+      a {
+        font-size: torem(16);
+      }
     }
   }
 }
