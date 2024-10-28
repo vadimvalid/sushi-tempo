@@ -1,14 +1,97 @@
 @use "settings" as *;
 
+.container {
+  max-width: torem(1370);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 torem(15);
+}
+
 section {
   > .container {
     h2 {
-      font-family: $medium;
-      font-size: torem(14);
+    }
+  }
+}
 
-      @media (min-width: 1200px) {
-        font-size: torem(16);
+.header {
+  padding: torem(25) 0;
+  border-radius: 0 0 $borderMain $borderMain;
+  background: $white;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: torem(40);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: torem(5);
+    font-size: torem(20);
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-right: torem(40);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: torem(10);
+    margin-right: torem(8);
+    padding: torem(6) torem(44);
+    background-color: $black;
+    border-radius: $borderMain;
+    font-size: torem(36);
+    line-height: 0.9;
+    color: $white;
+  }
+
+  &__lang {
+    flex: 1;
+  }
+
+  @include md-breakpoint {
+    padding: torem(15) 0;
+
+    .container {
+      gap: torem(25);
+    }
+
+    &__item {
+      font-size: torem(16);
+
+      &:last-child {
+        margin-right: 0;
       }
+    }
+
+    &__logo {
+      padding: torem(6) torem(30);
+      font-size: torem(30);
+    }
+  }
+
+  @include sm-breakpoint {
+    .container {
+      flex-wrap: wrap;
+      gap: torem(20);
+    }
+
+    &__item {
+      font-size: torem(16);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__logo {
+      flex: 0 1 100%;
     }
   }
 }

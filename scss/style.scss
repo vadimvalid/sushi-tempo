@@ -3,10 +3,10 @@
 @use "components";
 @use "layouts";
 
-html {
-  scrollbar-gutter: stable;
-}
+@use "settings" as *;
 
 body {
+  background: $black;
   font-family: "Helios", sans-serif;
+  line-height: normal;
 }

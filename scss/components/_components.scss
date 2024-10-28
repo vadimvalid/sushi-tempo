@@ -1,1 +1,23 @@
 @use "settings" as *;
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
