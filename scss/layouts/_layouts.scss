@@ -1,0 +1,14 @@
+@use "settings" as *;
+
+section {
+  > .container {
+    h2 {
+      font-family: $medium;
+      font-size: torem(14);
+
+      @media (min-width: 1200px) {
+        font-size: torem(16);
+      }
+    }
+  }
+}

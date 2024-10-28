@@ -1,0 +1,12 @@
+// Custom code
+@use "settings";
+@use "components";
+@use "layouts";
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: "Helios", sans-serif;
+}
