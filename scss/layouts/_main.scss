@@ -45,17 +45,26 @@
 
   &__item {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: torem(102);
-    height: torem(70);
-    padding: torem(12);
-    background: $black;
-    border-radius: $borderMain;
-    font-size: torem(20);
-    color: $white;
-    text-align: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: torem(102);
+      height: torem(70);
+      padding: torem(12);
+      background: $black;
+      border-radius: $borderMain;
+      font-size: torem(20);
+      color: $white;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        background: $red;
+      }
+    }
   }
 }
 

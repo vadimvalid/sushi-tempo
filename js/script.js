@@ -10,4 +10,14 @@
       loop: true,
     });
   });
+
+  window.addEventListener("scroll", function (event) {
+    const upBtn = document.querySelector(".up");
+
+    if (window.scrollY > 200) {
+      upBtn.classList.add("sticky");
+    } else {
+      upBtn.classList.remove("sticky");
+    }
+  });
 })();

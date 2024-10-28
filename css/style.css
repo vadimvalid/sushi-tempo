@@ -66,6 +66,16 @@ ul li {
   color: #fff;
 }
 
+.up {
+  position: fixed;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  display: none;
+}
+.up.sticky {
+  display: block;
+}
+
 .container {
   max-width: 85.625rem;
   width: 100%;
@@ -88,9 +98,16 @@ ul li {
   align-items: center;
   gap: 0.3125rem;
   font-size: 1.25rem;
+  transition: all 0.3s ease;
 }
 .header__item:last-child {
   margin-right: 2.5rem;
+}
+.header__item:hover {
+  color: #f00;
+}
+.header__item:hover svg path {
+  stroke: #f00;
 }
 .header__logo {
   display: flex;
@@ -290,6 +307,8 @@ ul li {
 }
 .categories__item {
   flex: 1;
+}
+.categories__item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,6 +320,10 @@ ul li {
   font-size: 1.25rem;
   color: #fff;
   text-align: center;
+  transition: all 0.3s ease;
+}
+.categories__item a:hover, .categories__item a.active {
+  background: #f00;
 }
 
 .section {

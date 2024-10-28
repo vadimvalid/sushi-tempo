@@ -30,9 +30,20 @@ section {
     align-items: center;
     gap: torem(5);
     font-size: torem(20);
+    transition: all 0.3s ease;
 
     &:last-child {
       margin-right: torem(40);
+    }
+
+    &:hover {
+      color: $red;
+
+      svg {
+        path {
+          stroke: $red;
+        }
+      }
     }
   }
 

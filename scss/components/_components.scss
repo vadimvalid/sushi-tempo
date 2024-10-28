@@ -48,3 +48,14 @@ ul {
     color: $white;
   }
 }
+
+.up {
+  position: fixed;
+  right: torem(30);
+  bottom: torem(30);
+  display: none;
+
+  &.sticky {
+    display: block;
+  }
+}
