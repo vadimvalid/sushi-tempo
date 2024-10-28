@@ -71,9 +71,26 @@ ul li {
   right: 1.875rem;
   bottom: 1.875rem;
   display: none;
+  z-index: 1000;
 }
 .up.sticky {
   display: block;
+}
+
+.cart-fixed {
+  position: fixed;
+  right: 7.1875rem;
+  bottom: 3.125rem;
+  display: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  color: #fff;
+  z-index: 1000;
+}
+.cart-fixed.sticky {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
 }
 
 .container {

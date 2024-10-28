@@ -54,8 +54,26 @@ ul {
   right: torem(30);
   bottom: torem(30);
   display: none;
+  z-index: 1000;
 
   &.sticky {
     display: block;
+  }
+}
+
+.cart-fixed {
+  position: fixed;
+  right: torem(115);
+  bottom: torem(50);
+  display: none;
+  font-size: torem(20);
+  transition: all 0.3s ease;
+  color: $white;
+  z-index: 1000;
+
+  &.sticky {
+    display: flex;
+    align-items: center;
+    gap: torem(5);
   }
 }
