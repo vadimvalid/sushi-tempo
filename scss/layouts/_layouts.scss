@@ -366,3 +366,85 @@ section {
     display: none;
   }
 }
+
+.signup {
+  display: grid;
+  place-content: center;
+  padding: torem(25) 0 torem(10);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: torem(32) torem(38);
+    border-radius: $borderMain;
+    background: $white;
+
+    h1 {
+      margin-bottom: torem(24);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(10);
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: torem(12);
+      font-size: torem(20);
+      text-align: center;
+
+      @include sm-breakpoint {
+        margin-bottom: torem(16);
+        font-size: torem(14);
+      }
+    }
+
+    > p {
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+      text-align: center;
+
+      @include sm-breakpoint {
+        font-size: torem(11);
+      }
+    }
+
+    .form {
+      margin: torem(22) 0 torem(18);
+
+      @include sm-breakpoint {
+        margin: torem(40) 0 torem(20);
+      }
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: torem(5);
+      text-align: center;
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+
+      a {
+        font-family: "Inter Black", sans-serif;
+        text-decoration: underline;
+      }
+
+      @include sm-breakpoint {
+        font-size: torem(10);
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: torem(35) torem(16);
+    }
+  }
+}
+
+.signup-page {
+  .main {
+    display: grid;
+    place-content: center;
+  }
+}

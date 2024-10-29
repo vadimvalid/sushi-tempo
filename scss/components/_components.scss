@@ -82,3 +82,86 @@ ul {
     gap: torem(5);
   }
 }
+
+h1 {
+  margin: 0;
+  font-size: torem(32);
+  text-align: center;
+
+  @include sm-breakpoint {
+    font-size: torem(24);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: torem(18);
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: torem(5);
+
+    label {
+      padding-left: torem(12);
+      font-size: torem(20);
+    }
+
+    input {
+      padding: torem(10) torem(16);
+      border: 1px solid #9d9d9d;
+      border-radius: $borderMain;
+      background: $white;
+      font-size: torem(12);
+
+      &::placeholder {
+        font-family: "Inter Regular", sans-serif;
+        font-size: torem(12);
+        color: #b9b9b9;
+      }
+
+      @include sm-breakpoint {
+        font-size: torem(11);
+
+        &::placeholder {
+          font-size: torem(11);
+        }
+      }
+    }
+  }
+
+  button {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: torem(13) torem(31) torem(12);
+    background: $black;
+    border-radius: $borderMain;
+    font-size: torem(20);
+    line-height: 1;
+    color: $white;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+
+    @include sm-breakpoint {
+      padding: torem(11) torem(30) torem(12);
+      font-size: torem(13);
+    }
+  }
+
+  @include sm-breakpoint {
+    &-item {
+      gap: torem(2);
+
+      label {
+        font-size: torem(14);
+      }
+    }
+  }
+}
