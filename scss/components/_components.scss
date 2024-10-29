@@ -82,3 +82,114 @@ ul {
     gap: torem(5);
   }
 }
+
+h1 {
+  margin: 0;
+  font-size: torem(32);
+  text-align: center;
+
+  @include sm-breakpoint {
+    font-size: torem(24);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: torem(18);
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: torem(5);
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    label {
+      flex: 1;
+      padding-left: torem(12);
+      font-size: torem(20);
+    }
+
+    input {
+      width: 100%;
+      padding: torem(10) torem(16);
+      border: 1px solid #9d9d9d;
+      border-radius: $borderMain;
+      background: $white;
+      font-size: torem(12);
+
+      &::placeholder {
+        font-family: "Inter Regular", sans-serif;
+        font-size: torem(12);
+        color: #b9b9b9;
+      }
+
+      @include sm-breakpoint {
+        font-size: torem(11);
+
+        &::placeholder {
+          font-size: torem(11);
+        }
+      }
+    }
+
+    &.error {
+      input {
+        border-color: $red;
+      }
+    }
+
+    &__error {
+      flex: 1;
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+      color: $red;
+      text-align: right;
+
+      @include sm-breakpoint {
+        font-size: torem(10);
+      }
+    }
+  }
+
+  button {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: torem(274);
+    padding: torem(13) torem(31) torem(12);
+    background: $black;
+    border-radius: $borderMain;
+    font-size: torem(20);
+    line-height: 1;
+    color: $white;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+
+    @include sm-breakpoint {
+      min-width: torem(182);
+      padding: torem(11) torem(30) torem(12);
+      font-size: torem(13);
+    }
+  }
+
+  @include sm-breakpoint {
+    &-item {
+      gap: torem(2);
+
+      label {
+        font-size: torem(14);
+      }
+    }
+  }
+}

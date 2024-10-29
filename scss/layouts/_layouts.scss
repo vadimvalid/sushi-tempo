@@ -366,3 +366,217 @@ section {
     display: none;
   }
 }
+
+.signup {
+  display: grid;
+  place-content: center;
+  padding: torem(25) 0 torem(10);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: torem(660);
+    padding: torem(32) torem(38);
+    border-radius: $borderMain;
+    background: $white;
+
+    h1 {
+      margin-bottom: torem(24);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(10);
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: torem(12);
+      font-size: torem(20);
+      text-align: center;
+
+      @include sm-breakpoint {
+        margin-bottom: torem(16);
+        font-size: torem(14);
+      }
+    }
+
+    > p {
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+      text-align: center;
+
+      @include sm-breakpoint {
+        font-size: torem(11);
+      }
+    }
+
+    .form {
+      margin: torem(22) 0 torem(18);
+
+      @include sm-breakpoint {
+        margin: torem(40) 0 torem(20);
+      }
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: torem(5);
+      text-align: center;
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+
+      a {
+        font-family: "Inter Black", sans-serif;
+        text-decoration: underline;
+      }
+
+      @include sm-breakpoint {
+        font-size: torem(10);
+      }
+    }
+
+    @include sm-breakpoint {
+      width: 100%;
+
+      padding: torem(35) torem(16);
+    }
+  }
+
+  @include sm-breakpoint {
+    justify-content: normal;
+  }
+}
+
+.signup-page {
+  .main {
+    display: grid;
+    place-content: center;
+
+    @include sm-breakpoint {
+      justify-content: normal;
+    }
+  }
+}
+
+.login-page {
+  .signup {
+    &__form {
+      padding: torem(47) torem(38) torem(52);
+
+      h1 {
+        margin-bottom: torem(14);
+
+        @include sm-breakpoint {
+          margin-bottom: torem(8);
+        }
+      }
+
+      .form {
+        margin: torem(60) 0 torem(18);
+
+        @include sm-breakpoint {
+          margin: torem(60) 0 torem(8);
+
+          button {
+            margin-top: torem(14);
+          }
+        }
+      }
+
+      &__button {
+        a {
+          font-family: "Inter Regular", sans-serif;
+          text-decoration: none;
+        }
+      }
+
+      @include sm-breakpoint {
+        padding: torem(50) torem(15);
+      }
+    }
+  }
+}
+
+.passowrd-page {
+  .signup__form {
+    > * {
+      max-width: torem(380);
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    > h1 {
+      margin-bottom: torem(40);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+      }
+    }
+
+    > h2 {
+      margin-bottom: torem(20);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(22);
+      }
+    }
+
+    > .form {
+      margin-bottom: torem(68);
+
+      input {
+        &::placeholder {
+          text-align: center;
+        }
+      }
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+
+        button {
+          margin-top: torem(24);
+        }
+      }
+    }
+  }
+}
+
+.new-password-page {
+  .signup__form {
+    h1 {
+      max-width: torem(250);
+      margin: 0 auto torem(22);
+
+      @include sm-breakpoint {
+        max-width: 100%;
+        margin: 0 auto torem(18);
+      }
+    }
+
+    > h2 {
+      max-width: torem(340);
+      margin: 0 auto torem(18);
+      font-size: torem(13);
+      color: $green;
+
+      @include sm-breakpoint {
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    > .form {
+      margin-bottom: torem(68);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+
+        button {
+          margin-top: torem(24);
+        }
+      }
+    }
+  }
+}
