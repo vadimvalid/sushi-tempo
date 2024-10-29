@@ -236,6 +236,10 @@ section {
   border-radius: $borderMain $borderMain 0 0;
   background: $white;
 
+  @include sm-breakpoint {
+    padding: torem(20) 0 torem(18);
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -263,6 +267,10 @@ section {
       flex-direction: column;
       align-items: center;
       gap: torem(10);
+
+      @include sm-breakpoint {
+        font-size: torem(16);
+      }
     }
 
     &__address {
@@ -325,10 +333,6 @@ section {
       flex-direction: row;
       align-items: flex-end;
       gap: torem(20);
-
-      &__block {
-        flex: 1;
-      }
 
       &__address {
         flex: 1;
