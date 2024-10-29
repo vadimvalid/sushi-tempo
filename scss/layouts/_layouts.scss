@@ -498,3 +498,85 @@ section {
     }
   }
 }
+
+.passowrd-page {
+  .signup__form {
+    > * {
+      max-width: torem(380);
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    > h1 {
+      margin-bottom: torem(40);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+      }
+    }
+
+    > h2 {
+      margin-bottom: torem(20);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(22);
+      }
+    }
+
+    > .form {
+      margin-bottom: torem(68);
+
+      input {
+        &::placeholder {
+          text-align: center;
+        }
+      }
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+
+        button {
+          margin-top: torem(24);
+        }
+      }
+    }
+  }
+}
+
+.new-password-page {
+  .signup__form {
+    h1 {
+      max-width: torem(250);
+      margin: 0 auto torem(22);
+
+      @include sm-breakpoint {
+        max-width: 100%;
+        margin: 0 auto torem(18);
+      }
+    }
+
+    > h2 {
+      max-width: torem(340);
+      margin: 0 auto torem(18);
+      font-size: torem(13);
+      color: $green;
+
+      @include sm-breakpoint {
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    > .form {
+      margin-bottom: torem(68);
+
+      @include sm-breakpoint {
+        margin-bottom: torem(44);
+
+        button {
+          margin-top: torem(24);
+        }
+      }
+    }
+  }
+}

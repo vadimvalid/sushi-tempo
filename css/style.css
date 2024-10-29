@@ -131,6 +131,7 @@ h1 {
   font-size: 1.25rem;
 }
 .form-item input {
+  width: 100%;
   padding: 0.625rem 1rem;
   border: 1px solid #9d9d9d;
   border-radius: 20px;
@@ -646,6 +647,85 @@ h1 {
 @media screen and (max-width: 767.98px) {
   .login-page .signup__form {
     padding: 3.125rem 0.9375rem;
+  }
+}
+
+.passowrd-page .signup__form > * {
+  max-width: 23.75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.passowrd-page .signup__form > h1 {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 767.98px) {
+  .passowrd-page .signup__form > h1 {
+    margin-bottom: 2.75rem;
+  }
+}
+.passowrd-page .signup__form > h2 {
+  margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 767.98px) {
+  .passowrd-page .signup__form > h2 {
+    margin-bottom: 1.375rem;
+  }
+}
+.passowrd-page .signup__form > .form {
+  margin-bottom: 4.25rem;
+}
+.passowrd-page .signup__form > .form input::-webkit-input-placeholder {
+  text-align: center;
+}
+.passowrd-page .signup__form > .form input:-ms-input-placeholder {
+  text-align: center;
+}
+.passowrd-page .signup__form > .form input::-ms-input-placeholder {
+  text-align: center;
+}
+.passowrd-page .signup__form > .form input::placeholder {
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .passowrd-page .signup__form > .form {
+    margin-bottom: 2.75rem;
+  }
+  .passowrd-page .signup__form > .form button {
+    margin-top: 1.5rem;
+  }
+}
+
+.new-password-page .signup__form h1 {
+  max-width: 15.625rem;
+  margin: 0 auto 1.375rem;
+}
+@media screen and (max-width: 767.98px) {
+  .new-password-page .signup__form h1 {
+    max-width: 100%;
+    margin: 0 auto 1.125rem;
+  }
+}
+.new-password-page .signup__form > h2 {
+  max-width: 21.25rem;
+  margin: 0 auto 1.125rem;
+  font-size: 0.8125rem;
+  color: #00bb4e;
+}
+@media screen and (max-width: 767.98px) {
+  .new-password-page .signup__form > h2 {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+.new-password-page .signup__form > .form {
+  margin-bottom: 4.25rem;
+}
+@media screen and (max-width: 767.98px) {
+  .new-password-page .signup__form > .form {
+    margin-bottom: 2.75rem;
+  }
+  .new-password-page .signup__form > .form button {
+    margin-top: 1.5rem;
   }
 }
 
