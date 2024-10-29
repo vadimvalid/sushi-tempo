@@ -47,6 +47,11 @@ ul {
     background: $red;
     color: $white;
   }
+
+  @include sm-breakpoint {
+    padding: torem(6) torem(21);
+    font-size: torem(12);
+  }
 }
 
 .up {

@@ -3,6 +3,10 @@
 .main {
   flex-grow: 1;
   padding-bottom: torem(56);
+
+  @include sm-breakpoint {
+    padding-bottom: torem(16);
+  }
 }
 
 .hero {
@@ -41,6 +45,12 @@
     flex-wrap: wrap;
     gap: torem(18);
     padding: 0 torem(15);
+
+    @include sm-breakpoint {
+      overflow-y: auto;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
   }
 
   &__item {
@@ -64,7 +74,18 @@
       &.active {
         background: $red;
       }
+
+      @include sm-breakpoint {
+        height: 100%;
+        padding: torem(8) torem(20) torem(9);
+        font-size: torem(14);
+      }
     }
+  }
+
+  @include sm-breakpoint {
+    padding: torem(13) 0 torem(8);
+    border-radius: 0 0 $borderMain $borderMain;
   }
 }
 
@@ -84,6 +105,11 @@
     font-size: torem(32);
     color: $black;
     text-align: center;
+
+    @include sm-breakpoint {
+      font-size: torem(24);
+      padding: torem(8) torem(17);
+    }
   }
 
   &__items {
@@ -91,6 +117,12 @@
     grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
     gap: torem(27) torem(15);
     margin-top: torem(26);
+
+    @include sm-breakpoint {
+      grid-template-columns: repeat(auto-fill, minmax(161px, 1fr));
+      gap: torem(12) torem(10);
+      margin-top: torem(16);
+    }
   }
 
   &__item {
@@ -103,6 +135,10 @@
         width: 100%;
         border-radius: $borderMain;
         object-fit: cover;
+
+        @include sm-breakpoint {
+          height: auto;
+        }
       }
     }
 
@@ -139,6 +175,28 @@
         border-radius: $borderMain;
         font-size: torem(16);
         color: $black;
+      }
+
+      @include sm-breakpoint {
+        flex-direction: column;
+        gap: torem(6);
+
+        &__title {
+          gap: torem(5);
+
+          h3 {
+            font-size: torem(15);
+          }
+
+          p {
+            font-size: torem(10);
+          }
+        }
+
+        &__price {
+          padding: torem(5) torem(12);
+          font-size: torem(13);
+        }
       }
     }
 
@@ -188,6 +246,10 @@
             height: torem(28);
           }
         }
+
+        &:hover {
+          background: $red;
+        }
       }
     }
 
@@ -200,5 +262,9 @@
         display: flex;
       }
     }
+  }
+
+  @include sm-breakpoint {
+    padding-top: torem(16);
   }
 }

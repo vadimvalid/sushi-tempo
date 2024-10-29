@@ -30,12 +30,48 @@
 
   window.addEventListener("DOMContentLoaded", function () {
     const countBtn = document.querySelectorAll(".section__item .btn");
+    const btnMinus = document.querySelectorAll(".section__item .minus");
+    const btnPlus = document.querySelectorAll(".section__item .plus");
+    const count = document.querySelectorAll(".section__item__count p");
 
     countBtn.forEach((btn) => {
       btn.addEventListener("click", function () {
         const parent = btn.closest(".section__item");
         parent.classList.add("active");
       });
+    });
+
+    btnMinus.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const parent = btn.closest(".section__item");
+        const count = parent.querySelector(".section__item__count > p");
+        if (parseInt(count.textContent) > 1) {
+          count.textContent = parseInt(count.textContent) - 1;
+        } else {
+          parent.classList.remove("active");
+        }
+      });
+    });
+
+    btnPlus.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const parent = btn.closest(".section__item");
+        const count = parent.querySelector(".section__item__count > p");
+        count.textContent = parseInt(count.textContent) + 1;
+      });
+    });
+  });
+})();
+
+(function () {
+  "use strict";
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const headerBurger = document.querySelector(".header__burger");
+    const header = document.querySelector("#header");
+
+    headerBurger.addEventListener("click", function () {
+      header.classList.toggle("active");
     });
   });
 })();
