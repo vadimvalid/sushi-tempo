@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sushi tempo</title>
   </head>
-  <body class="body signup-page">
+  <body class="body signup-page login-page">
     <header id="header" class="header">
       <div class="container">
         <button class="header__burger">
@@ -97,13 +97,13 @@
       <section id="signup" class="signup">
         <div class="container">
           <div class="signup__form">
-            <h1>ВХОД / РЕГИСТРАЦИЯ</h1>
-            <h2>создать аккаунт</h2>
-            <p>Присоединяйтесь, чтобы заказать вкуснейшие суши!</p>
+            <h1>ВОЙТИ В АККАУНТ</h1>
+            <p>чтобы заказать вкуснейшие суши!</p>
             <form class="form">
-              <div class="form-item">
+              <div class="form-item error">
                 <div class="form-item__title">
                   <label for="form-email">ТЕЛЕФОН / E-MAIL</label>
+                  <span class="form-item__error">некорректные данные</span>
                 </div>
                 <input
                   type="email"
@@ -112,7 +112,7 @@
                   placeholder="sushi@lover.com"
                 />
               </div>
-              <div class="form-item">
+              <div class="form-item error">
                 <div class="form-item__title">
                   <label for="form-password">ПАРОЛЬ</label>
                 </div>
@@ -122,11 +122,10 @@
                   id="form-password"
                 />
               </div>
-              <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              <button>вход</button>
             </form>
             <div class="signup__form__button">
-              <p>уже есть аккаунт?</p>
-              <a href="#">авторизуйтесь</a>
+              <a href="#">зАБЫЛИ ПАРОЛЬ?</a>
             </div>
           </div>
         </div>

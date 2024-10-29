@@ -375,6 +375,7 @@ section {
   &__form {
     display: flex;
     flex-direction: column;
+    width: torem(660);
     padding: torem(32) torem(38);
     border-radius: $borderMain;
     background: $white;
@@ -437,8 +438,14 @@ section {
     }
 
     @include sm-breakpoint {
+      width: 100%;
+
       padding: torem(35) torem(16);
     }
+  }
+
+  @include sm-breakpoint {
+    justify-content: normal;
   }
 }
 
@@ -446,5 +453,48 @@ section {
   .main {
     display: grid;
     place-content: center;
+
+    @include sm-breakpoint {
+      justify-content: normal;
+    }
+  }
+}
+
+.login-page {
+  .signup {
+    &__form {
+      padding: torem(47) torem(38) torem(52);
+
+      h1 {
+        margin-bottom: torem(14);
+
+        @include sm-breakpoint {
+          margin-bottom: torem(8);
+        }
+      }
+
+      .form {
+        margin: torem(60) 0 torem(18);
+
+        @include sm-breakpoint {
+          margin: torem(60) 0 torem(8);
+
+          button {
+            margin-top: torem(14);
+          }
+        }
+      }
+
+      &__button {
+        a {
+          font-family: "Inter Regular", sans-serif;
+          text-decoration: none;
+        }
+      }
+
+      @include sm-breakpoint {
+        padding: torem(50) torem(15);
+      }
+    }
   }
 }

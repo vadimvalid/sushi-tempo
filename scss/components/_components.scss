@@ -103,7 +103,14 @@ h1 {
     flex-direction: column;
     gap: torem(5);
 
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     label {
+      flex: 1;
       padding-left: torem(12);
       font-size: torem(20);
     }
@@ -129,6 +136,24 @@ h1 {
         }
       }
     }
+
+    &.error {
+      input {
+        border-color: $red;
+      }
+    }
+
+    &__error {
+      flex: 1;
+      font-family: "Inter Regular", sans-serif;
+      font-size: torem(12);
+      color: $red;
+      text-align: right;
+
+      @include sm-breakpoint {
+        font-size: torem(10);
+      }
+    }
   }
 
   button {
@@ -136,6 +161,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: torem(274);
     padding: torem(13) torem(31) torem(12);
     background: $black;
     border-radius: $borderMain;
@@ -150,6 +176,7 @@ h1 {
     }
 
     @include sm-breakpoint {
+      min-width: torem(182);
       padding: torem(11) torem(30) torem(12);
       font-size: torem(13);
     }
