@@ -681,3 +681,20 @@ section {
     }
   }
 }
+
+.section-text {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: torem(14);
+    padding: torem(26) torem(35);
+    background: $white;
+    border-radius: $borderMain;
+    font-size: torem(19);
+
+    @include sm-breakpoint {
+      padding: torem(64) torem(25);
+      font-size: torem(13);
+    }
+  }
+}

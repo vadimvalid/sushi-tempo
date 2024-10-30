@@ -806,6 +806,22 @@ h1 {
   }
 }
 
+.section-text .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.625rem 2.1875rem;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 1.1875rem;
+}
+@media screen and (max-width: 767.98px) {
+  .section-text .wrapper {
+    padding: 4rem 1.5625rem;
+    font-size: 0.8125rem;
+  }
+}
+
 .main {
   flex-grow: 1;
   padding-bottom: 3.5rem;
