@@ -698,3 +698,113 @@ section {
     }
   }
 }
+
+.cabinet__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: torem(22);
+  padding: torem(42) torem(35) torem(30);
+  background: $white;
+  border-radius: $borderMain;
+  font-size: torem(19);
+
+  h2 {
+    margin: 0;
+    font-size: torem(28);
+  }
+
+  .cabinet__form {
+    display: flex;
+    flex-direction: column;
+    gap: torem(28);
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        position: relative;
+        width: fit-content;
+        font-family: "Inter", sans-serif;
+        font-size: torem(12);
+        font-weight: 500;
+        color: #9d9d9d;
+        transform: translate(32px, 7px);
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: calc(100% + torem(22));
+          height: 2px;
+          background: $white;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+      }
+
+      input {
+        padding: torem(11) torem(32);
+        border-radius: $borderMain;
+        border: 1px solid #9d9d9d;
+        background: $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: torem(14);
+      }
+    }
+  }
+
+  > button {
+    align-self: flex-end;
+    padding: torem(6) torem(36) torem(5);
+    background: #b9b9b9;
+    border-radius: $borderMain;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: torem(12);
+    color: #696969;
+  }
+
+  @include sm-breakpoint {
+    padding: torem(64) torem(25);
+    font-size: torem(13);
+  }
+}
+
+.cabinet__buttons {
+  position: absolute;
+  top: 52px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: torem(14);
+
+  a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: torem(12) torem(50) torem(13);
+    border-radius: $borderMain;
+    background-color: $black;
+    font-size: torem(20);
+    color: $white;
+    text-align: center;
+  }
+
+  @include sm-breakpoint {
+    display: none;
+  }
+}
+
+.cabinet-page {
+  .main {
+    padding: torem(34) 0;
+
+    .container {
+      position: relative;
+    }
+  }
+}

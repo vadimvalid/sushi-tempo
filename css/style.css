@@ -822,6 +822,111 @@ h1 {
   }
 }
 
+.cabinet__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.375rem;
+  padding: 2.625rem 2.1875rem 1.875rem;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 1.1875rem;
+}
+.cabinet__wrapper h2 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+.cabinet__wrapper .cabinet__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.cabinet__wrapper .cabinet__form__item {
+  display: flex;
+  flex-direction: column;
+}
+.cabinet__wrapper .cabinet__form__item label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9d9d9d;
+  -webkit-transform: translate(32px, 7px);
+  transform: translate(32px, 7px);
+}
+.cabinet__wrapper .cabinet__form__item label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 1.375rem);
+  height: 2px;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.cabinet__wrapper .cabinet__form__item input {
+  padding: 0.6875rem 2rem;
+  border-radius: 20px;
+  border: 1px solid #9d9d9d;
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.cabinet__wrapper > button {
+  align-self: flex-end;
+  padding: 0.375rem 2.25rem 0.3125rem;
+  background: #b9b9b9;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #696969;
+}
+@media screen and (max-width: 767.98px) {
+  .cabinet__wrapper {
+    padding: 4rem 1.5625rem;
+    font-size: 0.8125rem;
+  }
+}
+
+.cabinet__buttons {
+  position: absolute;
+  top: 52px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.cabinet__buttons a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 3.125rem 0.8125rem;
+  border-radius: 20px;
+  background-color: #000;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .cabinet__buttons {
+    display: none;
+  }
+}
+
+.cabinet-page .main {
+  padding: 2.125rem 0;
+}
+.cabinet-page .main .container {
+  position: relative;
+}
+
 .main {
   flex-grow: 1;
   padding-bottom: 3.5rem;
