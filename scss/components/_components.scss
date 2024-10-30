@@ -124,7 +124,6 @@ h1 {
       font-size: torem(12);
 
       &::placeholder {
-        font-family: "Inter Regular", sans-serif;
         font-size: torem(12);
         color: #b9b9b9;
       }
@@ -146,7 +145,8 @@ h1 {
 
     &__error {
       flex: 1;
-      font-family: "Inter Regular", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
       font-size: torem(12);
       color: $red;
       text-align: right;

@@ -1,21 +1,14 @@
 @font-face {
-  font-family: "Helios";
-  src: url("../fonts/Helios.woff2") format("woff2");
-  font-weight: 900;
+  font-family: "Inter";
+  src: url("../fonts/InterVariableFont.woff2") format("woff2");
+  font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter Regular";
-  src: url("../fonts/InterRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter Black";
-  src: url("../fonts/InterBlack.woff2") format("woff2");
-  font-weight: 900;
+  font-family: "RobotoCondensed Bold";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -139,22 +132,18 @@ h1 {
   font-size: 0.75rem;
 }
 .form-item input::-webkit-input-placeholder {
-  font-family: "Inter Regular", sans-serif;
   font-size: 0.75rem;
   color: #b9b9b9;
 }
 .form-item input:-ms-input-placeholder {
-  font-family: "Inter Regular", sans-serif;
   font-size: 0.75rem;
   color: #b9b9b9;
 }
 .form-item input::-ms-input-placeholder {
-  font-family: "Inter Regular", sans-serif;
   font-size: 0.75rem;
   color: #b9b9b9;
 }
 .form-item input::placeholder {
-  font-family: "Inter Regular", sans-serif;
   font-size: 0.75rem;
   color: #b9b9b9;
 }
@@ -180,7 +169,8 @@ h1 {
 }
 .form-item__error {
   flex: 1;
-  font-family: "Inter Regular", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 0.75rem;
   color: #f00;
   text-align: right;
@@ -454,7 +444,6 @@ h1 {
   flex-wrap: wrap;
   gap: 1.25rem;
   margin-top: 0.3125rem;
-  font-family: "Inter Black", sans-serif;
   font-size: 0.8125rem;
 }
 .footer__info__address p:not(:last-child) {
@@ -560,7 +549,8 @@ h1 {
   }
 }
 .signup__form > p {
-  font-family: "Inter Regular", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 0.75rem;
   text-align: center;
 }
@@ -583,11 +573,15 @@ h1 {
   align-items: center;
   gap: 0.3125rem;
   text-align: center;
-  font-family: "Inter Regular", sans-serif;
   font-size: 0.75rem;
 }
+.signup__form__button p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
 .signup__form__button a {
-  font-family: "Inter Black", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
   text-decoration: underline;
 }
 @media screen and (max-width: 767.98px) {
@@ -630,18 +624,19 @@ h1 {
   }
 }
 .login-page .signup__form .form {
-  margin: 3.75rem 0 1.125rem;
+  margin: 2.8125rem 0 1.125rem;
 }
 @media screen and (max-width: 767.98px) {
   .login-page .signup__form .form {
-    margin: 3.75rem 0 0.5rem;
+    margin: 2.8125rem 0 0.5rem;
   }
   .login-page .signup__form .form button {
     margin-top: 0.875rem;
   }
 }
 .login-page .signup__form__button a {
-  font-family: "Inter Regular", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   text-decoration: none;
 }
 @media screen and (max-width: 767.98px) {
@@ -708,17 +703,23 @@ h1 {
 .new-password-page .signup__form > h2 {
   max-width: 21.25rem;
   margin: 0 auto 1.125rem;
-  font-size: 0.8125rem;
+  font-size: 1.25rem;
   color: #00bb4e;
 }
 @media screen and (max-width: 767.98px) {
   .new-password-page .signup__form > h2 {
     max-width: 100%;
     margin-bottom: 0;
+    font-size: 0.8125rem;
   }
 }
 .new-password-page .signup__form > .form {
   margin-bottom: 4.25rem;
+}
+.new-password-page .signup__form > .form .form-item label {
+  margin-bottom: 0.625rem;
+  padding: 0;
+  text-align: center;
 }
 @media screen and (max-width: 767.98px) {
   .new-password-page .signup__form > .form {
@@ -726,6 +727,9 @@ h1 {
   }
   .new-password-page .signup__form > .form button {
     margin-top: 1.5rem;
+  }
+  .new-password-page .signup__form > .form .form-item label {
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -776,6 +780,29 @@ h1 {
   .contact-page .main {
     justify-content: center;
     padding: 1.875rem 0;
+  }
+}
+
+.section-error .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  font-size: 2.25rem;
+  color: #fff;
+  text-align: center;
+}
+.section-error .container h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #fff;
+}
+@media screen and (max-width: 767.98px) {
+  .section-error .container {
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+  .section-error .container h1 {
+    font-size: 2rem;
   }
 }
 
@@ -949,7 +976,8 @@ h1 {
   color: #fff;
 }
 .section__item__info__title p {
-  font-family: "Inter Regular", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 0.8125rem;
 }
 .section__item__info__price {
@@ -1040,7 +1068,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #000;
-  font-family: "Helios", sans-serif;
+  font-family: "RobotoCondensed Bold", sans-serif;
   line-height: 1;
   color: #000;
   text-transform: uppercase;

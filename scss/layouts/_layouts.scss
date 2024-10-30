@@ -278,7 +278,6 @@ section {
       flex-wrap: wrap;
       gap: torem(20);
       margin-top: torem(5);
-      font-family: "Inter Black", sans-serif;
 
       font-size: torem(13);
 
@@ -401,7 +400,8 @@ section {
     }
 
     > p {
-      font-family: "Inter Regular", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
       font-size: torem(12);
       text-align: center;
 
@@ -424,11 +424,16 @@ section {
       align-items: center;
       gap: torem(5);
       text-align: center;
-      font-family: "Inter Regular", sans-serif;
       font-size: torem(12);
 
+      p {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+      }
+
       a {
-        font-family: "Inter Black", sans-serif;
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
         text-decoration: underline;
       }
 
@@ -474,10 +479,10 @@ section {
       }
 
       .form {
-        margin: torem(60) 0 torem(18);
+        margin: torem(45) 0 torem(18);
 
         @include sm-breakpoint {
-          margin: torem(60) 0 torem(8);
+          margin: torem(45) 0 torem(8);
 
           button {
             margin-top: torem(14);
@@ -487,7 +492,8 @@ section {
 
       &__button {
         a {
-          font-family: "Inter Regular", sans-serif;
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
           text-decoration: none;
         }
       }
@@ -558,23 +564,38 @@ section {
     > h2 {
       max-width: torem(340);
       margin: 0 auto torem(18);
-      font-size: torem(13);
+      font-size: torem(20);
       color: $green;
 
       @include sm-breakpoint {
         max-width: 100%;
         margin-bottom: 0;
+        font-size: torem(13);
       }
     }
 
     > .form {
       margin-bottom: torem(68);
 
+      .form-item {
+        label {
+          margin-bottom: torem(10);
+          padding: 0;
+          text-align: center;
+        }
+      }
+
       @include sm-breakpoint {
         margin-bottom: torem(44);
 
         button {
           margin-top: torem(24);
+        }
+
+        .form-item {
+          label {
+            margin-bottom: torem(20);
+          }
         }
       }
     }
@@ -631,6 +652,32 @@ section {
     @include sm-breakpoint {
       justify-content: center;
       padding: torem(30) 0;
+    }
+  }
+}
+
+.section-error {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: torem(18);
+    font-size: torem(36);
+    color: $white;
+    text-align: center;
+
+    h1 {
+      margin: 0;
+      font-size: torem(64);
+      color: $white;
+    }
+
+    @include sm-breakpoint {
+      gap: torem(12);
+      font-size: torem(16);
+
+      h1 {
+        font-size: torem(32);
+      }
     }
   }
 }
