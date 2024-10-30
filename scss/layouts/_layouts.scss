@@ -707,7 +707,6 @@ section {
   padding: torem(42) torem(35) torem(30);
   background: $white;
   border-radius: $borderMain;
-  font-size: torem(19);
 
   h2 {
     margin: 0;
@@ -769,8 +768,31 @@ section {
   }
 
   @include sm-breakpoint {
-    padding: torem(64) torem(25);
-    font-size: torem(13);
+    padding: torem(14) torem(25) torem(22);
+
+    h2 {
+      font-size: torem(16);
+    }
+
+    .cabinet__form {
+      gap: torem(18);
+
+      &__item {
+        label {
+          font-size: torem(10);
+          transform: translate(15px, 7px);
+
+          &:before {
+            width: calc(100% + torem(15));
+          }
+        }
+
+        input {
+          padding: torem(7) torem(15);
+          font-size: torem(10);
+        }
+      }
+    }
   }
 }
 
@@ -805,6 +827,266 @@ section {
 
     .container {
       position: relative;
+    }
+
+    @include sm-breakpoint {
+      padding: torem(25) 0;
+      justify-content: normal;
+    }
+  }
+}
+
+.history__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: torem(22);
+  padding: torem(42) torem(35) torem(30);
+  background: $white;
+  border-radius: $borderMain;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: torem(20);
+    width: torem(700);
+
+    @include sm-breakpoint {
+      width: 100%;
+      gap: torem(12);
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: torem(8);
+    padding: torem(25) 0 torem(25) torem(12);
+    border-top: 1px solid #b8bdbf;
+    border-bottom: 1px solid #b8bdbf;
+
+    &__status {
+      display: flex;
+      align-items: center;
+      gap: torem(8);
+      font-size: torem(20);
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: torem(8);
+      padding-left: torem(24);
+      font-size: torem(15);
+
+      p {
+        &:last-child {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: torem(14);
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &__content {
+      display: none;
+      position: relative;
+      flex-direction: column;
+      gap: torem(14);
+      margin-top: torem(8);
+
+      &__result {
+        display: flex;
+        align-items: center;
+        gap: torem(20);
+        margin-top: torem(4);
+        font-size: torem(20);
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: max-content;
+          padding: torem(8) torem(34);
+          background: $black;
+          border-radius: $borderMain;
+          font-size: torem(16);
+          color: $white;
+        }
+      }
+
+      &__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(4, auto);
+        column-gap: torem(20);
+        row-gap: torem(8);
+
+        &__img {
+          grid-column: 1 / 2;
+          grid-row: 1 / -1;
+          object-fit: cover;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        &__info {
+          grid-column: 2 / -1;
+          grid-row: 1 / 2;
+          display: flex;
+          align-items: center;
+          gap: torem(8);
+          font-size: torem(20);
+
+          p {
+            &:last-child {
+              font-family: "Inter", sans-serif;
+              font-size: torem(16);
+              font-weight: 500;
+            }
+          }
+        }
+
+        &__category {
+          grid-column: 2 / -1;
+          grid-row: 2 / 3;
+          font-family: "Inter", sans-serif;
+          font-size: torem(16);
+          font-weight: 500;
+        }
+
+        &__price {
+          grid-column: 2 / -1;
+          grid-row: 3 / 4;
+
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: max-content;
+            padding: torem(10) torem(15);
+            background: $black;
+            border-radius: $borderMain;
+            font-size: torem(16);
+            color: $white;
+          }
+        }
+
+        &__ingridients {
+          grid-column: 2 / -1;
+          grid-row: 4/-1;
+          font-family: "Inter", sans-serif;
+          font-size: torem(13);
+          font-weight: 500;
+        }
+      }
+
+      &.isOpen {
+        display: flex;
+      }
+    }
+
+    &__details {
+      position: absolute;
+      bottom: 20px;
+      right: 8px;
+      display: flex;
+      align-items: center;
+      gap: torem(16);
+      cursor: pointer;
+
+      &.hide {
+        bottom: 0;
+      }
+    }
+
+    @include sm-breakpoint {
+      gap: 0;
+      padding: torem(15) 0 torem(25) torem(5);
+
+      &__status {
+        font-size: torem(12);
+      }
+
+      &__info {
+        font-size: torem(12);
+
+        p {
+          &:last-child {
+            font-size: torem(12);
+          }
+        }
+      }
+
+      &__content {
+        gap: torem(18);
+
+        &__result {
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: torem(8);
+          font-size: torem(16);
+
+          button {
+            font-size: torem(13);
+          }
+        }
+
+        &__item {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 100px auto auto auto;
+          column-gap: torem(6);
+
+          &__img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+          }
+
+          &__info {
+            grid-column: 1 / -1;
+            grid-row: 2/3;
+            font-size: torem(16);
+          }
+
+          &__category {
+            grid-column: 1 / -1;
+            grid-row: 3/4;
+            font-size: torem(10);
+          }
+
+          &__price {
+            grid-column: 2 / -1;
+            grid-row: 1/2;
+            align-self: end;
+
+            p {
+              padding: torem(5) torem(10);
+              font-size: torem(12);
+            }
+          }
+
+          &__ingridients {
+            grid-column: 1 / -1;
+            grid-row: 4/5;
+            font-size: torem(13);
+          }
+        }
+      }
+
+      &__details {
+        bottom: 5px;
+        right: 0;
+        gap: torem(4);
+        font-size: torem(10);
+
+        &.hide {
+          transform: translateY(100%);
+        }
+      }
     }
   }
 }

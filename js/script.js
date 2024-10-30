@@ -2,13 +2,15 @@
   "use strict";
 
   window.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".swiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      loop: true,
-    });
+    if (this.document.querySelectorAll(".swiper").length) {
+      var swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    }
   });
 
   window.addEventListener("scroll", function (event) {
@@ -73,5 +75,36 @@
     headerBurger.addEventListener("click", function () {
       header.classList.toggle("active");
     });
+  });
+})();
+
+(function () {
+  "use strict";
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const historyOpen = document.querySelectorAll(
+      ".history__wrapper__item__details.open"
+    );
+    const historyClose = document.querySelectorAll(
+      ".history__wrapper__item__details.hide"
+    );
+
+    if (historyOpen) {
+      historyOpen.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          btn.classList.add("d-none");
+          btn.nextElementSibling.classList.add("isOpen");
+        });
+      });
+
+      historyClose.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          historyOpen.forEach((el) => {
+            el.classList.remove("d-none");
+          });
+          btn.parentElement.classList.remove("isOpen");
+        });
+      });
+    }
   });
 })();
