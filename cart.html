@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sushi tempo</title>
+  </head>
+  <body class="body cabinet-page">
+    <header id="header" class="header">
+      <div class="container">
+        <button class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__logo header__item">
+          <a href="/">
+            <img
+              src="./images/icons/logo-big.svg"
+              alt="logo"
+              width="27"
+              height="27"
+              loading="lazy"
+            />
+            <p>Sushi tempo</p>
+          </a>
+        </div>
+        <div class="header__lang header__item">
+          <img
+            src="./images/icons/icon-lang.svg"
+            alt="lang icon"
+            width="20"
+            height="20"
+          />
+          <select>
+            <option value="ru" selected>Русский</option>
+            <option value="sr">SRPSKI</option>
+          </select>
+        </div>
+        <button type="button" class="header__profile header__item">
+          <svg
+            width="20"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m14.783 17.428.37-.239-.19-.397a5.501 5.501 0 0 0-9.925 0l-.19.397.37.239A8.794 8.794 0 0 0 10 18.833a8.794 8.794 0 0 0 4.783-1.405zm.618-1.24.318.576.47-.461a8.833 8.833 0 1 0-12.377 0l.469.461.318-.576A6.164 6.164 0 0 1 10 13a6.164 6.164 0 0 1 5.4 3.188zM19.5 10a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0zm-9.5.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm3.667-3a3.667 3.667 0 1 1-7.334 0 3.667 3.667 0 0 1 7.334 0z"
+              fill="#000"
+              stroke="#000"
+            />
+          </svg>
+          <p>Иван И.</p>
+        </button>
+        <button type="button" class="header__cart header__item">
+          <svg
+            width="19"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.116 3.389H18L16.111 10H5.134m11.922 3.778H5.722L3.833 1.5H1m5.667 16.056a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0zm10.389 0a.944.944 0 1 1-1.89 0 .944.944 0 0 1 1.89 0z"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>Корзина</p>
+        </button>
+        <div class="header__mobile">
+          <a href="#">Войти</a>
+          <a href="#">Корзина</a>
+          <ul>
+            <li><a href="#">контакты</a></li>
+            <li><a href="#">работа у нас</a></li>
+            <li><a href="#">для партнеров</a></li>
+          </ul>
+          <div class="header__mobile__contact">
+            <a href="https://www.instagram.com/_sushi_tempo_/" target="_blank">
+              <img
+                src="./images/icons/icon-inst.svg"
+                alt="instagram"
+              />_SUSHI_TEMPO_</a
+            >
+            <a href="tel:+381 677-678-262" target="_blank"
+              >+(381) 677-678-262</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <section class="history">
+        <div class="container">
+          <div class="history__wrapper cart__wrapper">
+            <h1>Корзина</h1>
+
+            <div class="history__wrapper__items">
+              <div class="history__wrapper__item">
+                <div class="history__wrapper__item__product">
+                  <div class="history__wrapper__item__product__image">
+                    <img src="./images/1.png" alt="product" />
+                  </div>
+                  <div class="history__wrapper__item__product__info">
+                    <h3>Salmon Tartar</h3>
+                    <p>roll</p>
+                    <div class="history__wrapper__item__product__info__price">
+                      <p>1.800 rsd</p>
+                      <div class="section__item__count">
+                        <button class="section__item__count__btn minus">
+                          <p>-</p>
+                        </button>
+                        <p>1</p>
+                        <button class="section__item__count__btn plus">
+                          <p>+</p>
+                        </button>
+                      </div>
+                    </div>
+                    <p>Лосось, авокадо, икра тобико, соус терияки</p>
+                  </div>
+                </div>
+                <div class="history__wrapper__item__product">
+                  <div class="history__wrapper__item__product__image">
+                    <img src="./images/2.png" alt="product" />
+                  </div>
+                  <div class="history__wrapper__item__product__info">
+                    <h3>tricolore</h3>
+                    <p>set</p>
+                    <div class="history__wrapper__item__product__info__price">
+                      <p>1.170 rsd</p>
+                      <div class="section__item__count">
+                        <button class="section__item__count__btn minus">
+                          <p>-</p>
+                        </button>
+                        <p>1</p>
+                        <button class="section__item__count__btn plus">
+                          <p>+</p>
+                        </button>
+                      </div>
+                    </div>
+                    <p>Salmon Hosomaki Cucumber Hosomaki Avocado Hosomaki</p>
+                  </div>
+                </div>
+              </div>
+              <h2>Дополнительно</h2>
+              <div class="history__wrapper__items__add">
+                <div class="history__wrapper__item">
+                  <div class="history__wrapper__item__product">
+                    <div class="history__wrapper__item__product__image">
+                      <img src="./images/72.png" alt="product" />
+                    </div>
+                    <div class="history__wrapper__item__product__info">
+                      <h3>WASABI</h3>
+                      <p>sos</p>
+                      <div class="history__wrapper__item__product__info__price">
+                        <p>0 rsd</p>
+                        <div class="section__item__count">
+                          <button class="section__item__count__btn minus">
+                            <p>-</p>
+                          </button>
+                          <p>1</p>
+                          <button class="section__item__count__btn plus">
+                            <p>+</p>
+                          </button>
+                        </div>
+                      </div>
+                      <p>Лосось, авокадо, икра тобико, соус терияки</p>
+                    </div>
+                  </div>
+                  <div class="history__wrapper__item__product">
+                    <div class="history__wrapper__item__product__image">
+                      <img src="./images/73.png" alt="product" />
+                    </div>
+                    <div class="history__wrapper__item__product__info">
+                      <h3>đumbir</h3>
+                      <p>marinirani</p>
+                      <div class="history__wrapper__item__product__info__price">
+                        <p>10 rsd</p>
+                        <div class="section__item__count">
+                          <button class="section__item__count__btn minus">
+                            <p>-</p>
+                          </button>
+                          <p>1</p>
+                          <button class="section__item__count__btn plus">
+                            <p>+</p>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history__wrapper__item__product">
+                    <div class="history__wrapper__item__product__image">
+                      <img src="./images/74.png" alt="product" />
+                    </div>
+                    <div class="history__wrapper__item__product__info">
+                      <h3>đumbir</h3>
+                      <p>marinirani</p>
+                      <div class="history__wrapper__item__product__info__price">
+                        <p>10 rsd</p>
+                        <div class="section__item__count">
+                          <button class="section__item__count__btn minus">
+                            <p>-</p>
+                          </button>
+                          <p>1</p>
+                          <button class="section__item__count__btn plus">
+                            <p>+</p>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="history__wrapper__items__result">
+                <p>Итого: 2.170 rsd</p>
+                <div class="history__wrapper__items__result__buttons">
+                  <button class="btn">ДОСТАВКА</button>
+                  <button class="btn">САМОВЫВОЗ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <ul class="footer__links">
+          <li><a href="#">КОНТАКТЫ</a></li>
+          <li><a href="#">РАБОТА У НАС</a></li>
+          <li><a href="#">ДЛЯ ПАРТНЕРОВ</a></li>
+        </ul>
+        <div class="footer__info">
+          <div class="footer__info__block">
+            <img
+              src="./images/icons/logo-big.svg"
+              alt="logo"
+              width="77"
+              height="73"
+            />
+            <p>SUSHI TEMPO</p>
+          </div>
+
+          <div class="footer__info__address">
+            <p>Dunavski kej 20, (Dorčol)</p>
+            <p>Vojvode Stepe 103, (Voždovac)</p>
+            <p>Požeška 89, (Banovo Brdo)</p>
+          </div>
+        </div>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/_sushi_tempo_/" target="_blank">
+            <img
+              src="./images/icons/icon-inst.svg"
+              alt="instagram"
+            />_SUSHI_TEMPO_</a
+          >
+          <a href="tel:+381 677-678-262" target="_blank">+(381) 677-678-262</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
