@@ -659,9 +659,9 @@ textarea {
 }
 
 .signup-page .main {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 767.98px) {
   .signup-page .main {
@@ -828,9 +828,9 @@ textarea {
 }
 
 .contact-page .main {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: normal;
   padding: 2.125rem 0;
 }

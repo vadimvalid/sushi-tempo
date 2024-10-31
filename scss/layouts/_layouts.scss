@@ -455,8 +455,9 @@ section {
 
 .signup-page {
   .main {
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include sm-breakpoint {
       justify-content: normal;
@@ -644,8 +645,9 @@ section {
 
 .contact-page {
   .main {
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: normal;
     padding: torem(34) 0;
 
