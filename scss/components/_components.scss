@@ -221,4 +221,35 @@ h1 {
     padding: torem(11) torem(30) torem(12);
     font-size: torem(13);
   }
+
+  &--green {
+    min-width: torem(232);
+    border: 1px solid $green;
+    background: transparent;
+    font-size: torem(14);
+    color: $green;
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+}
+
+textarea {
+  width: torem(480);
+  margin: 0 auto;
+  padding: torem(20) torem(26);
+  border-radius: $borderMain;
+  background: $white;
+  border: 1px solid $borderColor;
+  font-family: "Inter", sans-serif;
+  font-size: torem(20);
+  font-weight: 500;
+
+  @include sm-breakpoint {
+    width: 100%;
+    padding: torem(11) torem(15);
+    font-size: torem(10);
+  }
 }

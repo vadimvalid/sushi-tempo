@@ -713,49 +713,6 @@ section {
     font-size: torem(28);
   }
 
-  .cabinet__form {
-    display: flex;
-    flex-direction: column;
-    gap: torem(28);
-
-    &__item {
-      display: flex;
-      flex-direction: column;
-
-      label {
-        position: relative;
-        width: fit-content;
-        font-family: "Inter", sans-serif;
-        font-size: torem(12);
-        font-weight: 500;
-        color: #9d9d9d;
-        transform: translate(32px, 7px);
-
-        &:before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: calc(100% + torem(22));
-          height: 2px;
-          background: $white;
-          transform: translate(-50%, -50%);
-          z-index: -1;
-        }
-      }
-
-      input {
-        padding: torem(11) torem(32);
-        border-radius: $borderMain;
-        border: 1px solid #9d9d9d;
-        background: $white;
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        font-size: torem(14);
-      }
-    }
-  }
-
   > button {
     align-self: flex-end;
     padding: torem(6) torem(36) torem(5);
@@ -772,26 +729,6 @@ section {
 
     h2 {
       font-size: torem(16);
-    }
-
-    .cabinet__form {
-      gap: torem(18);
-
-      &__item {
-        label {
-          font-size: torem(10);
-          transform: translate(15px, 7px);
-
-          &:before {
-            width: calc(100% + torem(15));
-          }
-        }
-
-        input {
-          padding: torem(7) torem(15);
-          font-size: torem(10);
-        }
-      }
     }
   }
 }
@@ -832,6 +769,72 @@ section {
     @include sm-breakpoint {
       padding: torem(25) 0;
       justify-content: normal;
+    }
+  }
+}
+
+.cabinet__form {
+  display: flex;
+  flex-direction: column;
+  gap: torem(28);
+  width: torem(334);
+  margin: 0 auto;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      position: relative;
+      width: fit-content;
+      font-family: "Inter", sans-serif;
+      font-size: torem(12);
+      font-weight: 500;
+      color: #9d9d9d;
+      transform: translate(32px, 7px);
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% + torem(22));
+        height: 4px;
+        background: $white;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+
+    input {
+      padding: torem(11) torem(32);
+      border-radius: $borderMain;
+      border: 1px solid #9d9d9d;
+      background: $white;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: torem(14);
+    }
+  }
+
+  @include sm-breakpoint {
+    gap: torem(18);
+    width: 100%;
+
+    &__item {
+      label {
+        font-size: torem(10);
+        transform: translate(15px, 7px);
+
+        &:before {
+          width: calc(100% + torem(15));
+        }
+      }
+
+      input {
+        padding: torem(7) torem(15);
+        font-size: torem(10);
+      }
     }
   }
 }
@@ -1395,4 +1398,65 @@ section {
       }
     }
   }
+}
+
+.delivery__time {
+  display: flex;
+  justify-content: center;
+  gap: torem(14);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: torem(14);
+
+    .btn {
+      min-width: torem(232);
+      padding: torem(7) torem(20);
+      font-size: torem(20);
+
+      &:hover {
+        background: $green;
+      }
+
+      &.active {
+        background: $green;
+      }
+    }
+
+    select {
+      min-width: torem(232);
+      padding: torem(7) torem(20);
+      border-radius: $borderMain;
+      border: 1px solid $borderColor;
+      font-family: "Inter", sans-serif;
+      font-size: torem(14);
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  @include sm-breakpoint {
+    gap: torem(8);
+
+    &__item {
+      flex: 1;
+
+      .btn {
+        min-width: auto;
+        font-size: torem(16);
+      }
+
+      select {
+        min-width: auto;
+      }
+    }
+  }
+}
+
+.delivery__payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
