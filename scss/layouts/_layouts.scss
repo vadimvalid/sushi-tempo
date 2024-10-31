@@ -162,6 +162,22 @@ section {
             color: $black;
           }
         }
+
+        &__lang {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: torem(7);
+          padding: torem(11) torem(30) torem(8);
+          border-radius: $borderMain;
+          background-color: $black;
+          list-style: none;
+
+          select {
+            font-size: torem(20);
+            color: $white;
+          }
+        }
       }
     }
   }

@@ -217,6 +217,11 @@
       background: $white;
       font-size: torem(16);
       color: $black;
+
+      &:hover {
+        background: $red;
+        color: $white;
+      }
     }
 
     &--big {

@@ -30,7 +30,7 @@ button {
 
 select {
   border: none;
-  background: none;
+  background: transparent;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -407,6 +407,20 @@ textarea {
   background: transparent;
   font-size: 1rem;
   color: #000;
+}
+.header.active .header__mobile__lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4375rem;
+  padding: 0.6875rem 1.875rem 0.5rem;
+  border-radius: 20px;
+  background-color: #000;
+  list-style: none;
+}
+.header.active .header__mobile__lang select {
+  font-size: 1.25rem;
+  color: #fff;
 }
 @media screen and (max-width: 991.98px) {
   .header {
@@ -1913,6 +1927,10 @@ textarea {
   background: #fff;
   font-size: 1rem;
   color: #000;
+}
+.section__item .btn:hover {
+  background: #f00;
+  color: #fff;
 }
 .section__item--big .section__item__info__price {
   padding: 0.5rem 1.375rem;
