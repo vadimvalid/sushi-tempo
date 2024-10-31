@@ -575,9 +575,6 @@ textarea {
 }
 
 .signup {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
   padding: 1.5625rem 0 0.625rem;
 }
 .signup__form {
@@ -1701,6 +1698,11 @@ textarea {
 }
 .delivery__payment__notice:hover + p {
   display: block;
+}
+@media screen and (max-width: 767.98px) {
+  .delivery__payment {
+    gap: 0.5rem;
+  }
 }
 
 .main {

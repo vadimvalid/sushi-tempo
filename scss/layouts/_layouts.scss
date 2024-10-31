@@ -368,8 +368,6 @@ section {
 }
 
 .signup {
-  display: grid;
-  place-content: center;
   padding: torem(25) 0 torem(10);
 
   &__form {
@@ -1470,5 +1468,9 @@ section {
         display: block;
       }
     }
+  }
+
+  @include sm-breakpoint {
+    gap: torem(8);
   }
 }
