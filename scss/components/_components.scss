@@ -197,3 +197,28 @@ h1 {
 .d-none {
   display: none !important;
 }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: torem(274);
+  padding: torem(13) torem(31) torem(12);
+  background: $black;
+  border-radius: $borderMain;
+  font-size: torem(20);
+  line-height: 1;
+  color: $white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
+
+  @include sm-breakpoint {
+    min-width: torem(182);
+    padding: torem(11) torem(30) torem(12);
+    font-size: torem(13);
+  }
+}

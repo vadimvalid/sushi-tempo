@@ -145,8 +145,8 @@ section {
           gap: torem(10);
           margin: torem(15) 0;
           padding: torem(24) 0;
-          border-top: 1px solid #b8bdbf;
-          border-bottom: 1px solid #b8bdbf;
+          border-top: 1px solid $borderColor;
+          border-bottom: 1px solid $borderColor;
         }
 
         &__contact {
@@ -863,8 +863,8 @@ section {
     flex-direction: column;
     gap: torem(8);
     padding: torem(25) 0 torem(25) torem(12);
-    border-top: 1px solid #b8bdbf;
-    border-bottom: 1px solid #b8bdbf;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
 
     &__status {
       display: flex;
@@ -1085,6 +1085,153 @@ section {
 
         &.hide {
           transform: translateY(100%);
+        }
+      }
+    }
+  }
+}
+
+.product {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: torem(22);
+    padding: torem(60) torem(35) torem(56);
+    background: $white;
+    border-radius: $borderMain;
+
+    &__image {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      border-radius: $borderSecondary;
+
+      box-shadow: 0px 0px 14.4px 2px rgba(0, 0, 0, 0.61);
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        border-radius: $borderMain;
+      }
+    }
+
+    &__info {
+      grid-column: 2/3;
+      grid-row: 1/-1;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: torem(40);
+      }
+
+      > p {
+        font-family: "Inter", sans-serif;
+        font-size: torem(24);
+        font-weight: 500;
+      }
+
+      &__compound {
+        display: flex;
+        justify-content: center;
+        margin: torem(28) 0 torem(20);
+        padding: torem(11) torem(20);
+        font-size: torem(24);
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+      }
+
+      &__ingredients {
+        flex: 1;
+        padding: torem(18) torem(26);
+        border-radius: $borderMain;
+        border: 1px solid $borderColor;
+        font-family: "Inter", sans-serif;
+        font-size: torem(16);
+        font-weight: 500;
+      }
+    }
+
+    &__price {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      display: flex;
+      gap: torem(12);
+
+      &__item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: torem(16);
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: torem(11) torem(20);
+          background: $black;
+          border-radius: $borderMain;
+          font-size: torem(24);
+          line-height: 1;
+          color: $white;
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+
+        .btn {
+          min-width: auto;
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: torem(18);
+      padding: torem(16) torem(25) torem(14);
+
+      &__image {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+      }
+
+      &__info {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+
+        h2 {
+          font-size: torem(20);
+        }
+
+        > p {
+          font-size: torem(13);
+        }
+
+        &__compound {
+          margin: torem(11) 0 torem(10);
+          padding: torem(5) torem(20);
+          font-size: torem(13);
+        }
+
+        &__ingredients {
+          min-height: torem(78);
+          padding: torem(11) torem(15);
+          font-size: torem(10);
+        }
+      }
+
+      &__price {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        gap: torem(5);
+
+        &__item {
+          gap: torem(8);
+
+          p {
+            padding: torem(6) torem(14);
+            font-size: torem(11);
+          }
         }
       }
     }
