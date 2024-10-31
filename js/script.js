@@ -34,7 +34,6 @@
     const countBtn = document.querySelectorAll(".section__item .btn");
     const btnMinus = document.querySelectorAll(".section__item .minus");
     const btnPlus = document.querySelectorAll(".section__item .plus");
-    const count = document.querySelectorAll(".section__item__count p");
 
     countBtn.forEach((btn) => {
       btn.addEventListener("click", function () {
@@ -59,6 +58,35 @@
       btn.addEventListener("click", function () {
         const parent = btn.closest(".section__item");
         const count = parent.querySelector(".section__item__count > p");
+        count.textContent = parseInt(count.textContent) + 1;
+      });
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const btnMinus = document.querySelectorAll(
+      ".cart__wrapper .section__item__count .minus"
+    );
+    const btnPlus = document.querySelectorAll(
+      ".cart__wrapper .section__item__count .plus"
+    );
+
+    btnMinus.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const parent = btn.closest(".section__item__count");
+        const count = parent.querySelector(".count");
+        if (parseInt(count.textContent) > 1) {
+          count.textContent = parseInt(count.textContent) - 1;
+        } else {
+          parent.classList.remove("active");
+        }
+      });
+    });
+
+    btnPlus.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const parent = btn.closest(".section__item__count");
+        const count = parent.querySelector(".count");
         count.textContent = parseInt(count.textContent) + 1;
       });
     });
@@ -103,6 +131,26 @@
             el.classList.remove("d-none");
           });
           btn.parentElement.classList.remove("isOpen");
+        });
+      });
+    }
+  });
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const deliveryBtns = document.querySelectorAll(
+      ".delivery__time__item .btn"
+    );
+
+    if (deliveryBtns) {
+      deliveryBtns.forEach((btn) => {
+        if (btn.classList.contains("active")) {
+          btn.classList.remove("active");
+        }
+        btn.addEventListener("click", function () {
+          deliveryBtns.forEach((el) => {
+            el.classList.remove("active");
+          });
+          btn.classList.add("active");
         });
       });
     }

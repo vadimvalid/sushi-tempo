@@ -1197,20 +1197,6 @@ section {
 
           .section__item__count {
             display: flex;
-
-            &__btn {
-              &:first-child {
-                p {
-                  height: auto;
-                }
-              }
-
-              &:last-of-type {
-                p {
-                  height: auto;
-                }
-              }
-            }
           }
         }
       }
@@ -1457,8 +1443,32 @@ section {
 }
 
 .delivery__payment {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 8px);
+    display: none;
+    max-width: torem(232);
+    padding: torem(8) torem(26);
+    border-radius: $borderMain;
+    border: 1px solid #d9d9d9;
+    background: #d9d9d9;
+    font-size: torem(11);
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &__notice {
+    &:hover {
+      + p {
+        display: block;
+      }
+    }
+  }
 }
