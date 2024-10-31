@@ -649,6 +649,7 @@ section {
     display: grid;
     place-content: center;
     justify-content: normal;
+    padding: torem(34) 0;
 
     @include sm-breakpoint {
       justify-content: center;
