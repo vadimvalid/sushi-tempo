@@ -30,6 +30,7 @@ section {
     align-items: center;
     gap: torem(5);
     font-size: torem(20);
+    color: $black;
     transition: all 0.3s ease;
 
     &:last-child {

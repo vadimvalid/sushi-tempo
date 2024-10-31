@@ -296,6 +296,7 @@ textarea {
   align-items: center;
   gap: 0.3125rem;
   font-size: 1.25rem;
+  color: #000;
   transition: all 0.3s ease;
 }
 .header__item:last-child {
