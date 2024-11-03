@@ -960,7 +960,6 @@ textarea {
 @media screen and (max-width: 767.98px) {
   .cabinet-page .main {
     padding: 1.5625rem 0;
-    justify-content: normal;
   }
 }
 
